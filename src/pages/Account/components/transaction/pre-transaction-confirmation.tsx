@@ -40,7 +40,7 @@ const AddPaymasterAndData = ({
       {!showAddPaymasterUI && (
         <Paper sx={{ p: 2 }}>
           <Typography variant="body2" sx={{ mb: 1 }}>
-            Paymaster data
+            Paymaster URL
           </Typography>
           <Typography
             component="div"
@@ -54,7 +54,7 @@ const AddPaymasterAndData = ({
             onClick={() => setShowAddPaymasterUI(true)}
             variant="outlined"
           >
-            {paymasterAndData ? 'Change paymaster data' : 'Add paymaster data'}
+            {paymasterAndData ? 'Change paymaster url' : 'Add paymaster url'}
           </Button>
         </Paper>
       )}
@@ -64,7 +64,7 @@ const AddPaymasterAndData = ({
             value={paymasterAndData}
             onChange={(e) => setPaymasterAndDataLocal(e.target.value)}
             sx={{ width: '100%' }}
-            label="Paymaster And Data"
+            label="Paymaster URL"
             variant="standard"
             autoFocus
           />
