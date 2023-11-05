@@ -150,7 +150,7 @@ const PreTransactionConfirmationComponent: PreTransactionConfirmation = ({
             size="large"
             variant="contained"
             onClick={() => {
-              onComplete(transaction, { paymasterAndData });
+              onComplete(transaction, { paymasterUrl: paymasterAndData });
               setLoader(true);
             }}
           >
